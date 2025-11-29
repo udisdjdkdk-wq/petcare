@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="keywords" content="ペットケア, 犬の世話, 猫の世話, ペットフード, 動物病院, ペットトレーニング, ペットグルーミング, ペット健康, ペット用品, ペット飼育, ペットライ" />
+        <meta name="description" content="ペットケアウェブサイトは、ペットオーナーに向けて包括的な情報とリソースを提供します。健康、栄養、トレーニングから、ペット向けの製品レビューや専門家のアドバイスまで、愛するペットのための最善のケアをサポートします。あらゆるペットのニーズに対応し、飼い主が安心してペットを育てられるよう情報を充実させています。" />
+
+        <title>ペットに愛を、ケアに安心を</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel='stylesheet' href='css/boxicons.min.css'>
+        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    </head>
+    <body>
+    
+    <!-- Header Block: Floating Glassmorphic Navigation with Search -->
+<header class="header-glass-nav bxuxnci" id="header-main-xyz">
+    <div class="header-container">
+    <!-- Brand/Logo -->
+    <div class="brand-section">
+        <a href="index.html" class="brand-logo">
+        <svg class="logo-icon" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+            <path d="M15 20L18 23L25 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-text">Petcarejp</span>
+        </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <ul class="nav-list">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">ホーム</a>
+        </li>
+        <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            ページ
+            <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
+            <ul class="dropdown-menu-new">
+            <li><a href="ai-surupetutonotamenojiu-ji-nokeagaido-by-Petcarejp.html" class="dropdown-link">愛するペットのための究極のケアガイド by Petcarejp</a></li>
+            <li><a href="petutorainoxin-siisutairuwoti-an-suruPetcarejp.html" class="dropdown-link">ペットライの新しいスタイルを提案するPetcarejp</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="contact.html" class="nav-link">お問い合わせ</a>
+        </li>
+        <li class="nav-item">
+            <a href="reviews.html" class="nav-link">お客様の声</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-link">私たちについて</a>
+        </li>
+        </ul>
+    </nav>
+
+    <!-- Search Form -->
+    <div class="search-section bxuxnci">
+        <form action="order.php" method="GET" class="search-form">
+        <input 
+            type="search" 
+            name="q" 
+            class="search-input" 
+            placeholder="検索..."
+            aria-label="検索"
+        />
+        <button type="submit" class="search-btn" aria-label="検索">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2"/>
+            <path d="M12.5 12.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+        </form>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" aria-label="モバイルメニューを切り替え" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+    <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+            <a href="index.html" class="mobile-nav-link">ホーム</a>
+        </li>
+        <li class="mobile-nav-item mobile-has-dropdown">
+            <button class="mobile-nav-link mobile-dropdown-trigger">
+            ページ
+            <svg class="mobile-dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </button>
+            <ul class="mobile-dropdown-menu-new">
+            <li><a href="ai-surupetutonotamenojiu-ji-nokeagaido-by-Petcarejp.html" class="mobile-dropdown-link">愛するペットのための究極のケアガイド by Petcarejp</a></li>
+            <li><a href="petutorainoxin-siisutairuwoti-an-suruPetcarejp.html" class="mobile-dropdown-link">ペットライの新しいスタイルを提案するPetcarejp</a></li>
+            </ul>
+        </li>
+        <li class="mobile-nav-item">
+            <a href="contact.html" class="mobile-nav-link">お問い合わせ</a>
+        </li>
+        <li class="mobile-nav-item">
+            <a href="reviews.html" class="mobile-nav-link">お客様の声</a>
+        </li>
+        <li class="mobile-nav-item">
+            <a href="#about" class="mobile-nav-link">私たちについて</a>
+        </li>
+        </ul>
+        
+        <!-- Mobile Search -->
+        <div class="mobile-search bxuxnci">
+        <form action="order.php" method="GET" class="mobile-search-form">
+            <input 
+            type="search" 
+            name="q" 
+            class="mobile-search-input" 
+            placeholder="検索..."
+            aria-label="検索"
+            />
+            <button type="submit" class="mobile-search-btn" aria-label="検索">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2"/>
+                <path d="M12.5 12.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            </button>
+        </form>
+        </div>
+    </nav>
+    </div>
+</header>
+
+<!-- Header JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.getElementById('header-main-xyz');
+    const mobileToggle = header.querySelector('.mobile-toggle');
+    const mobileOverlay = header.querySelector('.mobile-nav-overlay');
+    const body = document.body;
+    
+    // Mobile menu toggle
+    mobileToggle.addEventListener('click', function() {
+    const isOpen = mobileToggle.getAttribute('aria-expanded') === 'true';
+    mobileToggle.setAttribute('aria-expanded', !isOpen);
+    mobileToggle.classList.toggle('active');
+    mobileOverlay.classList.toggle('active');
+    body.style.overflow = !isOpen ? 'hidden' : '';
+    });
+    
+    // Close mobile menu when clicking outside
+    mobileOverlay.addEventListener('click', function(e) {
+    if (e.target === mobileOverlay) {
+        mobileToggle.setAttribute('aria-expanded', 'false');
+        mobileToggle.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        body.style.overflow = '';
+    }
+    });
+    
+    // Close mobile menu when clicking a link
+    const mobileLinks = header.querySelectorAll('.mobile-nav-link:not(.mobile-dropdown-trigger)');
+    mobileLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        mobileToggle.setAttribute('aria-expanded', 'false');
+        mobileToggle.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        body.style.overflow = '';
+    });
+    });
+    
+    // Desktop dropdown functionality
+    const desktopDropdownTrigger = header.querySelector('.dropdown-trigger');
+    const desktopDropdownMenu = header.querySelector('.dropdown-menu-new');
+    
+    if (desktopDropdownTrigger && desktopDropdownMenu) {
+    desktopDropdownTrigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        const isOpen = desktopDropdownTrigger.getAttribute('aria-expanded') === 'true';
+        desktopDropdownTrigger.setAttribute('aria-expanded', !isOpen);
+        desktopDropdownMenu.classList.toggle('active');
+    });
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.has-dropdown')) {
+        desktopDropdownTrigger.setAttribute('aria-expanded', 'false');
+        desktopDropdownMenu.classList.remove('active');
+        }
+    });
+    }
+    
+    // Mobile dropdown functionality
+    const mobileDropdownTriggers = header.querySelectorAll('.mobile-dropdown-trigger');
+    mobileDropdownTriggers.forEach(trigger => {
+    trigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        const parent = trigger.closest('.mobile-has-dropdown');
+        const menu = parent.querySelector('.mobile-dropdown-menu-new');
+        parent.classList.toggle('active');
+        menu.classList.toggle('active');
+    });
+    });
+    
+    // Sticky header on scroll
+    let lastScroll = 0;
+    window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > 100) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+    lastScroll = currentScroll;
+    });
+});
+</script>
+
+<main>
+<!-- Hero Block: Asymmetric Split Design with Geometric Shapes -->
+<section class="hero-section-vx9k" id="about">
+    <div class="hero-container-mw7">
+    <!-- Animated Background Elements -->
+    <div class="hero-bg-shapes-qr5">
+        <div class="shape-circle-1"></div>
+        <div class="shape-triangle-1"></div>
+        <div class="shape-square-1"></div>
+        <div class="shape-blob-1"></div>
+    </div>
+    
+    <!-- Navigation Header -->
+    <header class="hero-header-k2p">
+        <nav class="hero-nav-container-xd8">
+        <div class="nav-wrapper-tj4">
+            <div class="logo-container-bn6">
+            <svg class="logo-icon-wp2" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="25" cy="25" r="20" stroke="currentColor" stroke-width="3" fill="none"/>
+                <path d="M15 25L22 32L35 19" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <input type="checkbox" id="mobile-menu-toggle-f9h" class="menu-checkbox-yt7">
+            <label for="mobile-menu-toggle-f9h" class="hamburger-label-ks3">
+            <span class="hamburger-line-1"></span>
+            <span class="hamburger-line-2"></span>
+            <span class="hamburger-line-3"></span>
+            </label>
+            
+            <!-- Navigation Menu -->
+            <div class="nav-menu-overlay-lr9">
+            <ul class="nav-list-qm4">
+                <li class="nav-item-pw8">
+                <a href="#contact" class="nav-link-zh5">お問い合わせ</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+    </header>
+    
+    <!-- Hero Content -->
+    <div class="hero-content-grid-sc1">
+        <div class="hero-text-column-vb7">
+        <div class="hero-text-wrapper-nm3">
+            <h1 class="hero-heading-dp9">ペットに愛を、ケアに安心を</h1>
+            <h2 class="hero-subheading-kx2">Petcarejpへようこそ。私たちはペットの健康と幸せを最優先に考え、質の高いペットケアサービスを提供しています。愛するペットのために、安心して利用できるプロフェッショナルなケアをお約束します。</h2>
+            
+            <div class="hero-cta-group-fr6">
+            <a href="#contact" class="hero-cta-primary-jt8">
+                <span class="cta-text-yw4">お問い合わせ</span>
+                <svg class="cta-arrow-icon-bm1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+        </div>
+        
+        <div class="hero-visual-column-hq5">
+        <div class="hero-image-container-tk9">
+            <div class="image-wrapper-xl4" style="background-image: url('img/image-background.png');">
+            <div class="image-overlay-gradient-pn7"></div>
+            </div>
+            
+            <!-- Floating SVG Elements -->
+            <div class="floating-element-rt2 float-1">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" stroke="#00ff88" stroke-width="2" fill="rgba(0, 255, 136, 0.1)"/>
+                <circle cx="50" cy="50" r="30" fill="#00ff88"/>
+            </svg>
+            </div>
+            
+            <div class="floating-element-rt2 float-2">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="50,10 90,90 10,90" stroke="#ff0080" stroke-width="2" fill="rgba(255, 0, 128, 0.1)"/>
+            </svg>
+            </div>
+            
+            <div class="floating-element-rt2 float-3">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="15" width="70" height="70" stroke="#ffd93d" stroke-width="2" fill="rgba(255, 217, 61, 0.1)" transform="rotate(45 50 50)"/>
+            </svg>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator-vy3">
+        <div class="scroll-line-animated-qj8"></div>
+    </div>
+    </div>
+</section>
+
+
+
+<section id="about" class="kxoqxnmw bg-light py-5">
+    <div class="container pt-5">
+        <h2 class="text-center py-5">ペットライの新しいスタイルを提案するPetcarejp</h2>
+        <div class="py-5">ペットライに新たな風を吹き込むPetcarejpは、ペットとの暮らしをより楽しく、便利にするための革新的な商品とサービスを提供しています。Petcarejpの製品ラインナップは、ペットの健康を最優先に考えたフードから、スタイリッシュで機能的なペットウェア、さらにはスマートテクノロジーを活用したペットケアガジェットまで、多岐にわたります。特に注目すべきは、Petcarejpの新しいスマートフードディスペンサーです。この画期的なディスペンサーは、ペットの食事管理をより簡単にし、飼い主の不在時でも適切な食事量を提供することができます。携帯アプリと連動し、遠隔操作で給餌タイミングを調整できるほか、ペットの食事履歴を記録する機能も搭載しています。また、Petcarejpは人間とペットの絆を深めるためのイベントも積極的に開催しています。これらのイベントでは、飼い主向けのペットケアワークショップや、ペットとの共同活動を提案するセッションが行われており、ペットとの生活をより豊かなものにするための情報を提供しています。Petcarejpは、ペットライを単なるペットの世話ではなく、家族の一員との幸せな生活だと考えています。これからもPetcarejpは、.</div>
+    </div>
+</section>
+
+
+
+
+
+<section class="contact-form-block-zx8q" id="contact-zx8q" data-aos="fade-up" data-aos-duration="800">
+    <div class="contact-container-zx8q">
+    <div class="contact-form-wrapper-zx8q">
+        <div class="form-header-zx8q">
+        <h2 class="form-title-zx8q">お問い合わせ</h2>
+        <div class="title-underline-zx8q"></div>
+        </div>
+        
+        <form class="contact-form-zx8q" method="POST" action="order.php">
+        <div class="form-group-zx8q">
+            <label for="name-zx8q" class="form-label-zx8q">お名前</label>
+            <input 
+            type="text" 
+            id="name-zx8q" 
+            name="name" 
+            class="form-input-zx8q" 
+            required
+            />
+        </div>
+        
+        <div class="form-group-zx8q">
+            <label for="email-zx8q" class="form-label-zx8q">メールアドレス</label>
+            <input 
+            type="email" 
+            id="email-zx8q" 
+            name="email" 
+            class="form-input-zx8q" 
+            required
+            />
+        </div>
+        
+        <div class="form-group-zx8q">
+            <label for="message-zx8q" class="form-label-zx8q">メッセージ</label>
+            <textarea 
+            id="message-zx8q" 
+            name="message" 
+            class="form-textarea-zx8q" 
+            rows="6" 
+            required
+            ></textarea>
+        </div>
+        
+        <button type="submit" class="form-submit-zx8q">
+            <span class="button-text-zx8q">送信</span>
+            <span class="button-arrow-zx8q">→</span>
+        </button>
+        </form>
+    </div>
+    
+    <div class="decorative-shapes-zx8q">
+        <div class="shape-circle-zx8q shape-1-zx8q"></div>
+        <div class="shape-circle-zx8q shape-2-zx8q"></div>
+        <div class="shape-blob-zx8q"></div>
+    </div>
+    </div>
+</section>
+
+</main>
+<footer class="footer-gradient-modern" id="footer-section-v2x">
+    <div class="footer-container">
+    <!-- Company Info Section -->
+    <div class="footer-company-info" data-aos="fade-up" data-aos-duration="800">
+        <div class="footer-brand">
+        <div class="footer-brand-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="20" fill="#ff6b9d" opacity="0.2"/>
+            <path d="M24 8L32 16L24 24L16 16L24 8Z" fill="#ff6b9d"/>
+            <path d="M24 24L32 32L24 40L16 32L24 24Z" fill="#c44569"/>
+            </svg>
+        </div>
+        <h3 class="footer-brand-name">Petcarejp</h3>
+        </div>
+        <div class="footer-contact-details">
+        <div class="footer-contact-item">
+            <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>東京都, 浜松市, 赤坂通り, 206</span>
+        </div>
+        <div class="footer-contact-item">
+            <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="tel:81 562-703-6818" class="footer-phone-link">81 562-703-6818</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Navigation Links Section -->
+    <div class="footer-nav-section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        <div class="footer-nav-column">
+        <h4 class="footer-nav-title">ナビゲーション</h4>
+        <ul class="footer-nav-list">
+            <li><a href="ai-surupetutonotamenojiu-ji-nokeagaido-by-Petcarejp.html" class="footer-nav-link">愛するペットのための究極のケアガイド by Petcarejp</a></li>
+            <li><a href="petutorainoxin-siisutairuwoti-an-suruPetcarejp.html" class="footer-nav-link">ペットライの新しいスタイルを提案するPetcarejp</a></li>
+        </ul>
+        </div>
+        <div class="footer-nav-column">
+        <h4 class="footer-nav-title">法的事項</h4>
+        <ul class="footer-nav-list">
+            <li><a href="policy.html" class="footer-nav-link">プライバシーポリシー</a></li>
+            <li><a href="terms.html" class="footer-nav-link">利用規約</a></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer Bottom Wave Divider -->
+    <div class="footer-wave-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="rgba(255, 107, 157, 0.1)"></path>
+    </svg>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+    <p class="footer-copyright">© 2025 すべての権利を保有します。 Petcarejp</p>
+    </div>
+</footer>
+
+
+
+    <script type="text/javascript" src="js/popper.js"></script><script> window.start.init({Palette:"palette1",Mode:"banner bottom",Time:"0", Message: "当社は、サイトとそのユーザーエクスペリエンスを向上させるためにクッキーを使用しています。サイトの利用を継続することで、クッキーの使用に同意したものとみなされます。クッキーはブラウザの設定でいつでも無効にすることができます。", ButtonText: "受け入れる", LinkText: "さらに詳しく"})</script>
+        
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>AOS.init();</script>
+    </body>
+</html>
